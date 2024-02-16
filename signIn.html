@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <title>Authorization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #signupForm,
+    #loginForm {
+      width: 300px;
+      margin: 0 auto;
+    }
+  </style> 
+    <body> 
+      <div class="container">
+        <h1>Sign In</h1> 
+        <form action="/api/auth/signin" method="post"> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" required><br> 
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Submit</button> 
+        </form> 
+      </div>
+    </body> 
+    </html> 
